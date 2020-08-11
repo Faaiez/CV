@@ -11,19 +11,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento" rel="stylesheet">
 </head>
 <body>
+    <div class="curve">
+      <svg class="viewBox" viewBox="0 0 300 300">
+        <!-- <path id="topcurve" d="M100,37c34.8,0,63,28.2,63,63s-28.2,63-63,63s-63-28.2-63-63S65.2,37,100,37z" transform="rotate(-85 100 100)" /> -->
+        <path id="bottomcurve" d="M100,37c34.8,0,63,28.2,63,63s-28.2,63-63,63s-63-28.2-63-63S65.2,37,100,37z" transform="rotate(0 100 100)" />
+        <text width="300">
+          <textPath xlink:href="#bottomcurve">
+            A Software Engineer
+          </textPath>
+        </text>
+      </svg>
+    </div>
     <div class="top-container">
-        <img class="top-cloud" src="https://image.flaticon.com/icons/png/512/1146/1146869.png" alt="Cloud">
+        <img class="engineer" src="https://image.flaticon.com/icons/svg/2535/2535451.svg" alt="Engineer">
         <h1>I'm Faaiez</h1>
-        <h2><p class="subtitle">a Software Engineer</p></h2>
+        <div class="photo-div">
+          <img class="photo" src="images/Faaiez circle.png" alt="Faaiez">
+        </div>
+        <!-- <h2><p class="subtitle">a Software Engineer</p></h2> -->
+        <div class="icons-div">
         <img class="bottom-cloud" src="https://image.flaticon.com/icons/svg/2996/2996390.svg" alt="Cloud">
+        <h2 class="hello">Hello World</h2>
         <br>
-        <img class="mountain" src="https://image.flaticon.com/icons/svg/2535/2535451.svg" alt="Mountain">
+      </div>
     </div>
 
     <div class="middle-container">
         <div class="profile">
-        <img class="photo" src="images/Faaiez circle.png" alt="Faaiez">
-          <h2>Hello.</h2>
           <p class="intro">I am an SAP Software Engineer specialising in ABAP Development.
             My main focus is ABAP Object Oriented Development.
             I have knowledge which encompasses all spheres of Software Engineering on the SAP Digital Platform.</p>
@@ -65,6 +79,7 @@
             </p>
           </div>
         </div>
+        <br>
         <hr>
         <div class="contact-me">
           <h2>Get In Touch</h2>
