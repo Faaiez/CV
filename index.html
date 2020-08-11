@@ -1,78 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Website describing Faaiez Sallie and Family">
-    <title>Faaiez Sallie</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>TinDog</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu" rel="stylesheet"> 
 </head>
+
 <body>
-    <div class="top-container">
-        <img class="top-cloud" src="https://image.flaticon.com/icons/png/512/1146/1146869.png" alt="Cloud">
-        <h1>I'm Faaiez</h1>
-        <h2><p class="subtitle">a Software Engineer</p></h2>
-        <img class="bottom-cloud" src="https://image.flaticon.com/icons/svg/2996/2996390.svg" alt="Cloud">
-        <br>
-        <img class="mountain" src="https://image.flaticon.com/icons/svg/2535/2535451.svg" alt="Mountain">
+
+  <section id="title">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <!-- Just an image -->
+      <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">tinDog</a>
+      </nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Energy <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">S</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">E</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">X</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Y</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Title -->
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>Meet new and interesting dogs nearby.</h1>
+        <button type="button">Download</button>
+        <button type="button">Download</button>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/iphone6.png" alt="iphone-mockup">
+      </div>
     </div>
+  </section>
 
-    <div class="middle-container">
-        <div class="profile">
-        <img class="photo" src="images/Faaiez circle.png" alt="Faaiez">
-          <h2>Hello.</h2>
-          <p class="intro">I am an SAP Software Engineer specialising in ABAP Development.
-            My main focus is ABAP Object Oriented Development.
-            I have knowledge which encompasses all spheres of Software Engineering on the SAP Digital Platform.</p>
-        </div>
-        <hr>
-        <div class="skills">
-          <h2>My Skills.</h2>
-          <div class="skill-row">
-            <img class="skill-image-odd" src="https://image.flaticon.com/icons/png/512/2920/2920277.png" alt="">
-            <h3>ABAP Development - ⭐️⭐️⭐️⭐️⭐️</h3>
-            <p>ABAP is a programming language developed by SAP for the development of business applications in the SAP environment. The ABAP Objects component makes object-oriented programming possible.
-            </p>
-          </div>
-          <div class="skill-row">
-            <img class="skill-image-even" src="https://image.flaticon.com/icons/svg/995/995347.svg" alt="">
-            <h3>SAP Forms - ⭐️⭐️⭐️⭐️⭐️</h3>
-            <p>Within SAP ERP as well as S/4 there are different types of forms used. Smartforms or ADOBE Forms</p>
-          </div>
-          <div class="skill-row">
-            <h3>ABAP on HANA - ⭐️⭐️⭐️⭐️★</h3>
-            <img class="skill-image-odd" src="https://images.youracclaim.com/size/680x680/images/4b66268c-65d7-4bc4-a8d1-a7472279564a/52.SAPCertifiedDevelopmentSpecialistABAPforSAPHANA2.0.png" alt="">
-            <p>SAP HANA is an in-memory, column-oriented, relational database management system developed and marketed by SAP SE. Its primary function as a database server is to store and retrieve data as requested by the applications.
-                ABAP (development) for SAP HANA refers to all developments which leverage the power of SAP HANA within ABAP-based applications. In this context, the SAP HANA platform is the primary database underlying the ABAP platform. 
-                This system deployment option is supported with AS ABAP 7.4 onwards.
-            </p>
-          </div>
-          <div class="skill-row">
-            <img class="skill-image-even" src="https://image.flaticon.com/icons/svg/3003/3003180.svg" alt="">
-            <h3>SAPUI5 - ⭐️⭐️⭐️★★</h3>
-            <p>SAPUI5 uses HTML5, Javascript and CSS for developing user interface technologies in SAP HANA, NetWeaver ABAP, and Java systems.
-                SAPUI5 provides a set of JavaScript and CSS libraries, which can be combined in an application using the combinations that are supported.
-            </p>
-          </div>
-        </div>
-        <hr>
-        <div class="contact-me">
-          <h2>Get In Touch</h2>
-          <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-          <p class="contact-message">Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-          <a class="contact-btn" href="mailto:name@email.com">CONTACT ME</a>
-        </div>
-      </div>
 
-      <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/Faaiez">LinkedIn</a>
-        <a class="footer-link" href="https://twitter.com/Faaiez">Twitter</a>
-        <a class="footer-link" href="https://sallie.co.za">Website</a>
-        <p class="copyleft">© 2020 Faaiez Sallie.</p>
-      </div>
+  <!-- Features -->
+
+  <section id="features">
+
+    <h3>Easy to use.</h3>
+    <p>So easy to use, even your dog could do it.</p>
+
+    <h3>Elite Clientele</h3>
+    <p>We have all the dogs, the greatest dogs.</p>
+
+    <h3>Guaranteed to work.</h3>
+    <p>Find the love of your dog's life or your money back.</p>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+    <img src="images/dog-img.jpg" alt="dog-profile">
+    <em>Pebbles, New York</em>
+
+    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+    <em>Beverly, Illinois</em> -->
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img src="images/techcrunch.png" alt="tc-logo">
+    <img src="images/tnw.png" alt="tnw-logo">
+    <img src="images/bizinsider.png" alt="biz-insider-logo">
+    <img src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+
+    <h3>Chihuahua</h3>
+    <h2>Free</h2>
+    <p>5 Matches Per Day</p>
+    <p>10 Messages Per Day</p>
+    <p>Unlimited App Usage</p>
+    <button type="button">Sign Up</button>
+
+
+    <h3>Labrador</h3>
+    <h2>$49 / mo</h2>
+    <p>Unlimited Matches</p>
+    <p>Unlimited Messages</p>
+    <p>Unlimited App Usage</p>
+    <button type="button">Sign Up</button>
+
+
+    <h3>Mastiff</h3>
+    <h2>$99 / mo</h2>
+    <p>Pirority Listing</p>
+    <p>Unlimited Matches</p>
+    <p>Unlimited Messages</p>
+    <p>Unlimited App Usage</p>
+    <button type="button">Sign Up</button>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3>Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button">Download</button>
+    <button type="button">Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <p>© Copyright 2018 TinDog</p>
+
+  </footer>
+
+
 </body>
 
 </html>
