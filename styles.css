@@ -345,22 +345,6 @@ section:nth-child(odd)  { background: var(--off-white); }
   margin-bottom: 1rem;
 }
 
-.cert-badge-icon {
-  width: 44px; height: 44px;
-  background: linear-gradient(135deg, var(--gold-500), var(--gold-300));
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(201,151,58,.35);
-}
-
-.cert-badge-icon i {
-  color: var(--navy-900);
-  font-size: 1.1rem;
-}
-
 .cert-status {
   display: inline-flex;
   align-items: center;
@@ -910,15 +894,24 @@ footer span { color: var(--gold-400); }
 .cert-legacy { border-left: 3px solid var(--border); }
 .cert-pioneer { border-left: 3px solid var(--gold-400); background: #fffbf0; }
 .cert-badge-icon {
-  width: 36px; height: 36px;
-  border-radius: 8px;
-  background: var(--navy-800);
-  color: var(--gold-400);
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--gold-500), var(--gold-300));
+  color: var(--navy-900);
   display: flex; align-items: center; justify-content: center;
-  font-size: .9rem;
+  font-size: 1rem;
   flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(201,151,58,.3);
 }
-.cert-active .cert-badge-icon { background: var(--navy-700); }
+.cert-legacy .cert-badge-icon {
+  background: linear-gradient(135deg, var(--navy-600), var(--navy-500));
+  color: var(--gold-300);
+  box-shadow: none;
+}
+.cert-active .cert-badge-icon {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #fff;
+}
 .cert-body { flex: 1; min-width: 0; }
 .cert-level { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--text-muted); margin-bottom: .2rem; }
 .cert-name { font-size: .875rem; font-weight: 600; color: var(--text-primary); line-height: 1.35; margin-bottom: .4rem; }
