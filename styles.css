@@ -729,6 +729,9 @@ footer span { color: var(--gold-400); }
     margin-bottom: 0;
   }
 
+  .section-title { break-after: avoid; }
+  .skill-group:first-of-type { break-before: avoid; }
+
   .sidebar { gap: .9rem; }
   .main-col { gap: .9rem; }
 
