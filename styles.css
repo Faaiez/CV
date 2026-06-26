@@ -985,3 +985,30 @@ code { font-size: .8em; background: #edf2f7; padding: .1em .35em; border-radius:
   .hero-top { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .hero-photo { width: 90px; height: 90px; }
 }
+
+/* ── Hero z-index fix (overlay was blocking clicks) ───────── */
+.hero-inner { position: relative; z-index: 2; }
+.hero-contact { position: relative; z-index: 2; }
+.hero-contact a, .hero-contact span { position: relative; z-index: 2; }
+
+/* ── Download button ──────────────────────────────────────── */
+.hero-actions { margin-top: 1.25rem; }
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  background: var(--gold-500);
+  color: var(--navy-950);
+  font-weight: 700;
+  font-size: .85rem;
+  padding: .65rem 1.4rem;
+  border-radius: 6px;
+  letter-spacing: .04em;
+  transition: background var(--transition), transform var(--transition);
+  text-decoration: none;
+}
+.btn-download:hover {
+  background: var(--gold-400);
+  transform: translateY(-1px);
+}
+.btn-download i { font-size: .9rem; }
