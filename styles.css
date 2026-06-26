@@ -211,27 +211,27 @@ section:nth-child(odd)  { background: var(--off-white); }
   gap: .7rem;
 }
 
-.hero-contact a {
+.hero-contact a, .hero-contact span {
   display: inline-flex;
   align-items: center;
   gap: .5rem;
   font-size: .85rem;
   font-weight: 500;
-  color: rgba(255,255,255,.8);
-  background: rgba(255,255,255,.07);
-  border: 1px solid rgba(255,255,255,.12);
+  color: rgba(255,255,255,.92);
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.22);
   border-radius: var(--radius-sm);
   padding: .45rem 1rem;
   transition: all var(--transition);
 }
 
 .hero-contact a:hover {
-  background: rgba(201,151,58,.2);
-  border-color: rgba(201,151,58,.4);
+  background: rgba(201,151,58,.25);
+  border-color: rgba(201,151,58,.5);
   color: var(--gold-300);
 }
 
-.hero-contact a i { color: var(--gold-400); }
+.hero-contact a i, .hero-contact span i { color: var(--gold-400); }
 
 .hero-stats {
   display: flex;
@@ -749,15 +749,7 @@ footer span { color: var(--gold-400); }
     grid-template-columns: 1fr;
   }
 
-  .hero-stats {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: .75rem;
-  }
-
-  .stat-card { min-width: 100px; padding: .9rem 1.1rem; }
-  .stat-number { font-size: 1.8rem; }
+  .hero-stats { justify-content: flex-start; }
 
   .nav-links { display: none; }
 
@@ -816,11 +808,7 @@ footer span { color: var(--gold-400); }
   font-size: .8rem;
   color: rgba(255,255,255,.75);
 }
-.hero-stats {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
+
 
 /* ── Card ─────────────────────────────────────────────────── */
 .card {
